@@ -9,3 +9,11 @@ print(list_num)
 file = open("file.txt","r")
 a = file.readlines()
 print(a)
+for i in range(len(a)):
+    a[i]=int(a[i].strip())
+print(a)
+
+product=0
+for i in range(len(a)):
+    product *=list_num[a[i]]
+print(product)                
